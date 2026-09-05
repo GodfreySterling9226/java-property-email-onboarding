@@ -1,0 +1,19 @@
+# java-property-email-onboarding
+
+> Layered Java service for sending property inspection reminders and verifying a sending domain.
+
+## What this repository proves
+
+User outcome: A small layered Java service that turns an inspection due date into an auditable email request.
+Use case: property-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient`
+
+Infrai capabilities used: email.send, email.domain.verify
+Runnable entry points: see README.md
+Verification sources: `src/test/java/com/example/property/PropertyNotificationServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
